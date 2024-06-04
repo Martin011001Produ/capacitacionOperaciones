@@ -1,4 +1,4 @@
-# 🌟 **Capacitación y Ejercicios Operaciones** 🌟
+# 🚀 **Capacitación y Ejercicios Operaciones** 🚀
 
 📂 Carpeta con todo lo referente a capacitaciones de Implementación:
 [Capacitaciones de Implementación](https://drive.google.com/drive/folders/1zXUdODmbDuu1owOHn7ZrCwpQa6t_xkU6)
