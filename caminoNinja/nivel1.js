@@ -25,7 +25,7 @@ const _ = require("lodash");
     partialProduct.stocks = [
         {
             warehouse: "default",
-            quantity: parseFloat(obj["Stock Default"]) / 2
+            quantity: parseInt(obj["Stock Default"]) / 2
         }
     ]
 
@@ -49,7 +49,7 @@ const _ = require("lodash");
     partialProduct.stocks = [
         {
             warehouse: "default",
-            quantity: Math.floor(parseFloat(obj["Stock Default"]) / 2)
+            quantity: Math.floor(parseInt(obj["Stock Default"]) / 2)
         }
     ]
 

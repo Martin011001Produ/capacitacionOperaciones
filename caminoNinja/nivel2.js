@@ -22,14 +22,6 @@ const _ = require("lodash");
         ]
     }
 
-    if (obj["Stock Default"] < stockBase) {
-        partialProduct.stocks = [
-            {
-                priceList: "default",
-                amount: 0
-            }
-        ]
-    }
     partialProduct.stocks = [
         {
             warehouse: "default",
