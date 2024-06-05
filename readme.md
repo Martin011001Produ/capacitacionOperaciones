@@ -18,7 +18,7 @@
 ### 🗃️ **Etapa 13 y 14:** ✅
 * **Exportador SQL y Http-invoicer** _(mirar por arriba)_
 
-### 🗃️ **Etapa 17:**
+### 🗃️ **Etapa 17:** ✅
 * **Contexto plis** _(mirar por arriba)_
 
 ### 🗃️ **Asincronismo:**
