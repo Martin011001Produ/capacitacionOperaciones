@@ -1,8 +1,8 @@
 const _ = require("lodash");
 const request = require("request-promise");
 
-const { getItem } = require('./core/requestItem.js');
-const { getNicknameString } = require('./core/requestUser.js');
+const { getItem } = require('../core/requestItem.js');
+const { getNicknameString } = require('../core/requestUser.js');
 
 async function nickname (){
     try {

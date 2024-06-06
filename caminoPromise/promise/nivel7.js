@@ -2,8 +2,8 @@ const _ = require("lodash");
 const request = require("request-promise");
 const Promise = require("bluebird")
 
-const { getSalesOrder } = require('./core/requestSalesOrder.js');
-const { getProduct } = require('./core/requestProduct.js');
+const { getSalesOrder } = require('../core/requestSalesOrder.js');
+const { getProduct } = require('../core/requestProduct.js');
 
 const listOrders = [
     "133850320",
