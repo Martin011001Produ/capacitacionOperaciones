@@ -2,7 +2,7 @@ const _ = require("lodash");
 const request = require("request-promise");
 const Promise = require("bluebird")
 
-const meliToken = "APP_USR-1138849081739375-060610-5c0947d250a09db96c73e9b229db9b45-132453365";
+const meliToken = "token";
 
 function getSellerId(mla1, mla2) {
 
