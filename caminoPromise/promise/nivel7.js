@@ -2,8 +2,8 @@ const _ = require("lodash");
 const request = require("request-promise");
 const Promise = require("bluebird")
 
-const { getSalesOrder } = require('../core/requestSalesOrder.js');
-const { getProduct } = require('../core/requestProduct.js');
+const getSalesOrder = require('../core/requestSalesOrder.js');
+const getProduct = require('../core/requestProduct.js');
 
 const listOrders = [
     "133850320",
@@ -29,18 +29,16 @@ const listOrders = [
 ]
 
 function getSalesOrdersInfo(listOrders) {
-
-    Promise.map(listOrders, salesOrderId => getSalesOrder(salesOrderId))
+    let list = []
+    return Promise.map(listOrders, salesOrderId => getSalesOrder(salesOrderId))
         .then(function (listRes) {
-            listRes.map(function (info) {
-                getProduct(info.productId)
-                .then(function(product){
-                    console.log(Object.assign(info, product))
+            list = listRes;
+            Promise.map(listRes, obj => getProduct(obj))
+                .then(function (products) {
+                    console.log(products)
                 })
-            })
         }).catch("No se encontraron ventas")
-
 }
 
-getSalesOrdersInfo(listOrders)
+getSalesOrdersInfo(listOrders).then()
 

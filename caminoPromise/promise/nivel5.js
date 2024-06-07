@@ -1,19 +1,20 @@
 const _ = require("lodash");
 const request = require("request-promise");
 
-const { getItem } = require('../core/requestItem.js');
-const { getNicknameString } = require('../core/requestUser.js');
+const getItem = require('../core/requestItem.js');
+const getNicknameString = require('../core/requestUser.js');
 
-async function nickname (){
-    try {
-        let item = await getItem('MLA1135446827');
-        console.log(item.seller_id);
+function nickname() {
 
-        let nickname = await getNicknameString(item.seller_id);
-        console.log(nickname);
-    } catch (error) {
-        console.error('Error:', error);
-    }
+    return getItem('MLA1135446827')
+        .then(function (item) {
+            getNicknameString(item.seller_id)
+                .then(function ({nickname}) {
+                    console.log(nickname);
+                })
+        }).catch(function (err) {
+            console.log(err)
+        })
 }
 
-nickname()
+nickname().then()
