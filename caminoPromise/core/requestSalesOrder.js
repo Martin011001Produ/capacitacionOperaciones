@@ -1,7 +1,7 @@
 const _ = require("lodash");
 const request = require("request-promise");
 
-const tokenProdu = "Bearer c909f0353664cfca83fc15c75e500e55e4639dcf";
+const tokenProdu = "Bearer token";
 
 function getSalesOrder(salesOrderId) {
     const options = {

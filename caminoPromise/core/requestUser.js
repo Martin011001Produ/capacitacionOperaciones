@@ -1,7 +1,7 @@
 const _ = require("lodash");
 const request = require("request-promise");
 
-const meliToken = "APP_USR-1138849081739375-060715-0295e7506118dfbd42d81747a8a2717d-132453365"; 
+const meliToken = "token"; 
 
 function getNicknameString(sellerId) {
     const options = {
